@@ -5,7 +5,7 @@ import EquipeVue from '../views/EquipeVue.vue'
 import EquipeCreationVue from '../views/EquipeCreationVue.vue'
 import ProfilJoueurVue from '../views/ProfilJoueurVue.vue'
 import AfficherData from '../views/AfficherData.vue'
-
+import Graphiques from '../views/Graphiques.vue'
 
 Vue.use(VueRouter)
 
@@ -35,7 +35,11 @@ const routes = [
   name: 'AfficherData',
   component: AfficherData
 },
-  
+{
+  path: '/Graphiques',
+  name: 'Graphiques',
+  component: Graphiques
+},
 ]
 
 const router = new VueRouter({
